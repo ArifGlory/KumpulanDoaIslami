@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="glory.doaanakmuslim.ResultActivity">
+
+    <TextView
+        android:id="@+id/titleResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Hasil Evaluasi"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtUserResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center_horizontal"
+        android:text="User"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/titleResult"/>
+
+    <TextView
+        android:id="@+id/txtSkorResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="Skor : "
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtUserResult"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  0  "
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_below="@+id/txtUserResult"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/txtSkorResult"
+        android:id="@+id/txtHasilResult"
+        />
+
+
+
+</RelativeLayout>

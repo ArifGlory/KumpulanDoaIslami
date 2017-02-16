@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_evaluasi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9"
+    tools:context="glory.doaanakmuslim.EvaluasiActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User : "
+        android:id="@+id/txtUser"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soal ke : "
+        android:id="@+id/txtketnomer"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:layout_toLeftOf="@+id/txtNoSoal"
+        android:layout_marginRight="3dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no "
+        android:id="@+id/txtNoSoal"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/titleEva"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Evaluasi"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/titleEva"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lineSoal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSoaleva1"
+            android:text="Ini untuk txt Soal"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gmbrSoal"
+        android:layout_below="@+id/lineSoal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tanya"
+        android:onClick="gmbrKlik"
+
+        />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnA"
+        android:layout_below="@+id/gmbrSoal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="A"
+        android:onClick="btnklikA"
+
+        />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnB"
+        android:layout_below="@+id/gmbrSoal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="B"
+        android:onClick="btnklikB"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linejawaban"
+        android:layout_below="@id/btnA"
+        android:layout_marginTop="10dp"
+        >
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/linejawaban"
+        android:text="C"
+        android:onClick="btnklikC"
+        />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnD"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linejawaban"
+        android:layout_alignParentEnd="true"
+        android:text="D"
+        android:onClick="btnklikD"
+
+        />
+
+
+</RelativeLayout>

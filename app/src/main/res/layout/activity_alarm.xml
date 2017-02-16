@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="glory.doaanakmuslim.AlarmActivity"
+    android:background="#5fb0c9"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Alarm Untuk Hafalan"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textClock"
+                        android:text="Waktu Sekarang"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    <TextClock
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textClock"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="50sp"
+                        />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textClock"
+                            android:layout_centerHorizontal="true"
+                            style="@style/Base.Widget.AppCompat.Toolbar"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#FAFAFA"
+                            android:textSize="17sp"
+                            android:text=" Set Alarm "
+                            android:layout_marginTop="30dp"
+                            android:id="@+id/btnSetAlarm"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/txtAlarmPrompt"
+                            android:layout_below="@+id/btnSetAlarm"
+                            android:layout_marginTop="10dp"
+                            android:text="Alarm Set at : "
+                            android:textSize="16sp"
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

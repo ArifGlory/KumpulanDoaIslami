@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="glory.doaanakmuslim.HomeFragment"
+    android:background="@drawable/home_gambar">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="20dp"
+            style="@style/Base.Widget.AppCompat.Toolbar"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:id="@+id/btnStart"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

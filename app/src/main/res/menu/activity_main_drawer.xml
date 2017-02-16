@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_doa"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="Doa doa" />
+        <item
+            android:id="@+id/nav_surah"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="Surah" />
+        <item
+            android:id="@+id/nav_evaluasi"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Evaluasi" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="About" />
+    </group>
+
+
+</menu>
